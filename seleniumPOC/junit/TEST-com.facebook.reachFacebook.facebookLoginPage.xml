@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="INBLRWHFD10KWT2" name="com.facebook.reachFacebook.facebookLoginPage" skipped="0" tests="2" time="16.631" timestamp="2019-07-19T06:05:02">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="ant.library.dir" value="C:\Users\182857\.p2\pool\plugins\org.apache.ant_1.10.5.v20190526-1402\lib" />
+    <property name="env.NUMBER_OF_PROCESSORS" value="8" />
+    <property name="env.USERPROFILE" value="C:\Users\182857" />
+    <property name="java.specification.version" value="10" />
+    <property name="ant.project.name" value="seleniumPOC" />
+    <property name="sun.cpu.isalist" value="amd64" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="debuglevel" value="source,lines,vars" />
+    <property name="env.CommonProgramW6432" value="C:\Program Files\Common Files" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="env.UATDATA" value="C:\windows\CCM\UATData\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77" />
+    <property name="env.OS" value="Windows_NT" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-10.0.1\bin" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.facebook.reachFacebook.facebookLoginPage skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\182857\Documents\Sourav\Python Automation\seleniumPOC\junit\TEST-com.facebook.reachFacebook.facebookLoginPage.xml crashfile=C:\Users\182857\Documents\Sourav\Python Automation\seleniumPOC\junitvmwatcher542331023000408733.properties propsfile=C:\Users\182857\Documents\Sourav\Python Automation\seleniumPOC\junit15822192411482199241.properties" />
+    <property name="jdk.debug" value="release" />
+    <property name="env.ComSpec" value="C:\windows\system32\cmd.exe" />
+    <property name="ant.file.seleniumPOC" value="C:\Users\182857\Documents\Sourav\Python Automation\seleniumPOC\build.xml" />
+    <property name="eclipse.pdebuild.templates" value="C:\Users\182857\eclipse\jee-2019-06\eclipse\..\..\..\.p2\pool\plugins\org.eclipse.pde.build_3.10.400.v20190320-1020\templates" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="org.apache.tools.ant.taskdefs.optional.junit.AggregateTransformer0" value="C:\Users\182857\AppData\Local\Temp\null1883136614" />
+    <property name="java.version.date" value="2018-04-17" />
+    <property name="java.home" value="C:\Program Files\Java\jdk-10.0.1" />
+    <property name="file.separator" value="\" />
+    <property name="basedir" value="C:\Users\182857\Documents\Sourav\Python Automation\seleniumPOC" />
+    <property name="env.ProgramFiles" value="C:\Program Files" />
+    <property name="java.vm.compressedOopsMode" value="32-bit" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="env.PROMPT" value="$P$G" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="env.LOCALAPPDATA" value="C:\Users\182857\AppData\Local" />
+    <property name="env.USERDOMAIN_ROAMINGPROFILE" value="AMERICAS" />
+    <property name="env.PROCESSOR_REVISION" value="8e0a" />
+    <property name="env.PSModulePath" value="C:\Program Files\WindowsPowerShell\Modules;C:\windows\system32\WindowsPowerShell\v1.0\Modules" />
+    <property name="user.script" value="" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="env.PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 142 Stepping 10, GenuineIntel" />
+    <property name="java.runtime.version" value="10.0.1+10" />
+    <property name="user.name" value="182857" />
+    <property name="env.ProgramW6432" value="C:\Program Files" />
+    <property name="env.DriverData" value="C:\Windows\System32\Drivers\DriverData" />
+    <property name="env.CommonProgramFiles" value="C:\Program Files\Common Files" />
+    <property name="env.PUBLIC" value="C:\Users\Public" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="java.vendor.version" value="18.3" />
+    <property name="env.COMPUTERNAME" value="INBLRWHFD10KWT2" />
+    <property name="env.HOMEPATH" value="\Users\182857" />
+    <property name="env.SystemDrive" value="C:" />
+    <property name="env.APPDATA" value="C:\Users\182857\AppData\Roaming" />
+    <property name="env.ProgramData" value="C:\ProgramData" />
+    <property name="java.io.tmpdir" value="C:\Users\182857\AppData\Local\Temp\" />
+    <property name="java.version" value="10.0.1" />
+    <property name="env.HOMEDRIVE" value="C:" />
+    <property name="env.PROCESSOR_LEVEL" value="6" />
+    <property name="env.Path" value="C:/Program Files/Java/jre1.8.0_171/bin/server;C:/Program Files/Java/jre1.8.0_171/bin;C:/Program Files/Java/jre1.8.0_171/lib/amd64;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Java\jdk-10.0.1\bin\;C:\Program Files (x86)\Webex\Webex\Applications;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Users\182857\AppData\Local\Programs\Python\Python37-32;C:\Users\182857\AppData\Local\Programs\Python\Python37-32\Scripts;C:\Users\182857\AppData\Local\Microsoft\WindowsApps;;C:\Users\182857\Desktop;" />
+    <property name="env.TMP" value="C:\Users\182857\AppData\Local\Temp" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="ant.home" value="C:\Users\182857\.p2\pool\plugins\org.apache.ant_1.10.5.v20190526-1402" />
+    <property name="sun.os.patch.level" value="" />
+    <property name="junit.output.dir" value="junit" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.10.5 compiled on July 10 2018" />
+    <property name="eclipse.pdebuild.scripts" value="C:\Users\182857\eclipse\jee-2019-06\eclipse\..\..\..\.p2\pool\plugins\org.eclipse.pde.build_3.10.400.v20190320-1020\scripts" />
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-10.0.1\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_171/bin/server;C:/Program Files/Java/jre1.8.0_171/bin;C:/Program Files/Java/jre1.8.0_171/lib/amd64;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Java\jdk-10.0.1\bin\;C:\Program Files (x86)\Webex\Webex\Applications;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Users\182857\AppData\Local\Programs\Python\Python37-32;C:\Users\182857\AppData\Local\Programs\Python\Python37-32\Scripts;C:\Users\182857\AppData\Local\Microsoft\WindowsApps;;C:\Users\182857\Desktop;;." />
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="env.LOGONSERVER" value="\\BLRRDCP01" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="sun.desktop" value="windows" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="env.USERDNSDOMAIN" value="AMERICAS.GLOBAL.NTTDATA.COM" />
+    <property name="java.class.path" value="C:\Users\182857\Documents\Sourav\Python Automation\seleniumPOC\bin;C:\Users\182857\Downloads\selenium-java-3.141.59\client-combined-3.141.59.jar;C:\Users\182857\Downloads\selenium-java-3.141.59\client-combined-3.141.59-sources.jar;C:\Users\182857\Downloads\selenium-java-3.141.59\libs\byte-buddy-1.8.15.jar;C:\Users\182857\Downloads\selenium-java-3.141.59\libs\commons-exec-1.3.jar;C:\Users\182857\Downloads\selenium-java-3.141.59\libs\guava-25.0-jre.jar;C:\Users\182857\Downloads\selenium-java-3.141.59\libs\okhttp-3.11.0.jar;C:\Users\182857\Downloads\selenium-java-3.141.59\libs\okio-1.14.0.jar;C:\Users\182857\.p2\pool\plugins\org.junit.jupiter.api_5.4.0.v20190212-2109.jar;C:\Users\182857\.p2\pool\plugins\org.junit.jupiter.engine_5.4.0.v20190212-2109.jar;C:\Users\182857\.p2\pool\plugins\org.junit.jupiter.migrationsupport_5.4.0.v20190212-2109.jar;C:\Users\182857\.p2\pool\plugins\org.junit.jupiter.params_5.4.0.v20190212-2109.jar;C:\Users\182857\.p2\pool\plugins\org.junit.platform.commons_1.4.0.v20190212-2109.jar;C:\Users\182857\.p2\pool\plugins\org.junit.platform.engine_1.4.0.v20190212-2109.jar;C:\Users\182857\.p2\pool\plugins\org.junit.platform.launcher_1.4.0.v20190212-2109.jar;C:\Users\182857\.p2\pool\plugins\org.junit.platform.runner_1.4.0.v20190212-2109.jar;C:\Users\182857\.p2\pool\plugins\org.junit.platform.suite.api_1.4.0.v20190212-2109.jar;C:\Users\182857\.p2\pool\plugins\org.junit.vintage.engine_5.4.0.v20190212-2109.jar;C:\Users\182857\.p2\pool\plugins\org.opentest4j_1.1.1.v20190212-2109.jar;C:\Users\182857\.p2\pool\plugins\org.apiguardian_1.0.0.v20190212-2109.jar;C:\Users\182857\.p2\pool\plugins\org.junit_4.12.0.v201504281640\junit.jar;C:\Users\182857\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar;C:\Users\182857\.p2\pool\plugins\org.apache.ant_1.10.5.v20190526-1402\lib\ant-launcher.jar;C:\Users\182857\.p2\pool\plugins\org.apache.ant_1.10.5.v20190526-1402\lib\ant.jar;C:\Users\182857\.p2\pool\plugins\org.apache.ant_1.10.5.v20190526-1402\lib\ant-junit.jar;C:\Users\182857\.p2\pool\plugins\org.apache.ant_1.10.5.v20190526-1402\lib\ant-junit4.jar" />
+    <property name="source" value="1.8" />
+    <property name="java.vm.vendor" value="&quot;Oracle Corporation&quot;" />
+    <property name="env.PROCESSOR_ARCHITECTURE" value="AMD64" />
+    <property name="user.variant" value="" />
+    <property name="user.timezone" value="" />
+    <property name="env.SystemRoot" value="C:\windows" />
+    <property name="java.vm.specification.version" value="10" />
+    <property name="os.name" value="Windows 10" />
+    <property name="user.country" value="US" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="env.USERDOMAIN" value="AMERICAS" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="user.home" value="C:\Users\182857" />
+    <property name="user.language" value="en" />
+    <property name="eclipse.pdebuild.home" value="C:\Users\182857\eclipse\jee-2019-06\eclipse\..\..\..\.p2\pool\plugins\org.eclipse.pde.build_3.10.400.v20190320-1020\." />
+    <property name="ant.java.version" value="10" />
+    <property name="env.ALLUSERSPROFILE" value="C:\ProgramData" />
+    <property name="env.SESSIONNAME" value="Console" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="env.ANT_HOME" value="C:\Users\182857\.p2\pool\plugins\org.apache.ant_1.10.5.v20190526-1402" />
+    <property name="env.windir" value="C:\windows" />
+    <property name="ant.file" value="C:\Users\182857\Documents\Sourav\Python Automation\seleniumPOC\build.xml" />
+    <property name="path.separator" value=";" />
+    <property name="os.version" value="10.0" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="env.CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files" />
+    <property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC" />
+    <property name="ant.project.invoked-targets" value="build,junitreport,facebookLoginPage (3)" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="ECLIPSE_HOME" value="../../../../eclipse/jee-2019-06/eclipse/" />
+    <property name="ant.core.lib" value="C:\Users\182857\.p2\pool\plugins\org.apache.ant_1.10.5.v20190526-1402\lib\ant.jar" />
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/" />
+    <property name="ant.file.type.seleniumPOC" value="file" />
+    <property name="user.dir" value="C:\Users\182857\Documents\Sourav\Python Automation\seleniumPOC" />
+    <property name="env.USERNAME" value="182857" />
+    <property name="os.arch" value="amd64" />
+    <property name="target" value="1.8" />
+    <property name="env.ProgramFiles(x86)" value="C:\Program Files (x86)" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="java.vm.version" value="10.0.1+10" />
+    <property name="env.TEMP" value="C:\Users\182857\AppData\Local\Temp" />
+    <property name="java.class.version" value="54.0" />
+    <property name="env.OneDrive" value="C:\Users\182857\OneDrive" />
+    <property name="ant.project.default-target" value="build" />
+  </properties>
+  <testcase classname="com.facebook.reachFacebook.facebookLoginPage" name="OpenFB" time="9.709" />
+  <testcase classname="com.facebook.reachFacebook.facebookLoginPage" name="OpenGmail" time="6.795" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 75.0.3770.90 (a6dcaf7e3ec6f70a194cc25e8149475c6590e025-refs/branch-heads/3770@{#1003}) on port 42157
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Jul 19, 2019 11:35:05 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 75.0.3770.90 (a6dcaf7e3ec6f70a194cc25e8149475c6590e025-refs/branch-heads/3770@{#1003}) on port 46914
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Jul 19, 2019 11:35:14 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
