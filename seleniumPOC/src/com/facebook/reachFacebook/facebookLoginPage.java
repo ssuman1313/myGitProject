@@ -29,11 +29,13 @@ public class facebookLoginPage {
 	public void OpenFB() {
 
 		driver.get("https://www.facebook.com");
+		System.out.println("FB Opened");
 	}
 
 	@Test
 	public void OpenGmail() {
 		driver.get("https://www.gmail.com");
+		System.out.println("Gmail Opened");
 	}
 
 }

@@ -168,7 +168,6 @@
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
-            <test name="com.facebook.reachFacebook.AllTests" todir="${junit.output.dir}"/>
             <test name="com.facebook.reachFacebook.facebookLoginPage" todir="${junit.output.dir}"/>
             <jvmarg line="-ea"/>
             <classpath refid="run.seleniumPOC.classpath"/>
