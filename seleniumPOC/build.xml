@@ -5,47 +5,91 @@
               directory with the processing instruction <?eclipse.ant.import?>
               as the first entry and export the buildfile again. --><project basedir="." default="build" name="seleniumPOC">
     <property environment="env"/>
-    <property name="ECLIPSE_HOME" value="../../../../eclipse/jee-2019-06/eclipse/"/>
+    <property name="ECLIPSE_HOME" value="../../../eclipse/jee-2019-06/eclipse/"/>
     <property name="junit.output.dir" value="junit"/>
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.8"/>
     <property name="source" value="1.8"/>
     <path id="JUnit 5.libraryclasspath">
-        <pathelement location="../../../../.p2/pool/plugins/org.junit.jupiter.api_5.4.0.v20190212-2109.jar"/>
-        <pathelement location="../../../../.p2/pool/plugins/org.junit.jupiter.engine_5.4.0.v20190212-2109.jar"/>
-        <pathelement location="../../../../.p2/pool/plugins/org.junit.jupiter.migrationsupport_5.4.0.v20190212-2109.jar"/>
-        <pathelement location="../../../../.p2/pool/plugins/org.junit.jupiter.params_5.4.0.v20190212-2109.jar"/>
-        <pathelement location="../../../../.p2/pool/plugins/org.junit.platform.commons_1.4.0.v20190212-2109.jar"/>
-        <pathelement location="../../../../.p2/pool/plugins/org.junit.platform.engine_1.4.0.v20190212-2109.jar"/>
-        <pathelement location="../../../../.p2/pool/plugins/org.junit.platform.launcher_1.4.0.v20190212-2109.jar"/>
-        <pathelement location="../../../../.p2/pool/plugins/org.junit.platform.runner_1.4.0.v20190212-2109.jar"/>
-        <pathelement location="../../../../.p2/pool/plugins/org.junit.platform.suite.api_1.4.0.v20190212-2109.jar"/>
-        <pathelement location="../../../../.p2/pool/plugins/org.junit.vintage.engine_5.4.0.v20190212-2109.jar"/>
-        <pathelement location="../../../../.p2/pool/plugins/org.opentest4j_1.1.1.v20190212-2109.jar"/>
-        <pathelement location="../../../../.p2/pool/plugins/org.apiguardian_1.0.0.v20190212-2109.jar"/>
-        <pathelement location="../../../../.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar"/>
-        <pathelement location="../../../../.p2/pool/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit.jupiter.api_5.4.0.v20190212-2109.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit.jupiter.engine_5.4.0.v20190212-2109.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit.jupiter.migrationsupport_5.4.0.v20190212-2109.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit.jupiter.params_5.4.0.v20190212-2109.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit.platform.commons_1.4.0.v20190212-2109.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit.platform.engine_1.4.0.v20190212-2109.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit.platform.launcher_1.4.0.v20190212-2109.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit.platform.runner_1.4.0.v20190212-2109.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit.platform.suite.api_1.4.0.v20190212-2109.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit.vintage.engine_5.4.0.v20190212-2109.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.opentest4j_1.1.1.v20190212-2109.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.apiguardian_1.0.0.v20190212-2109.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar"/>
+        <pathelement location="../../../.p2/pool/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
     </path>
     <path id="seleniumPOC.classpath">
         <pathelement location="bin"/>
-        <pathelement location="../../../../Downloads/selenium-java-3.141.59/client-combined-3.141.59.jar"/>
-        <pathelement location="../../../../Downloads/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
-        <pathelement location="../../../../Downloads/selenium-java-3.141.59/libs/byte-buddy-1.8.15.jar"/>
-        <pathelement location="../../../../Downloads/selenium-java-3.141.59/libs/commons-exec-1.3.jar"/>
-        <pathelement location="../../../../Downloads/selenium-java-3.141.59/libs/guava-25.0-jre.jar"/>
-        <pathelement location="../../../../Downloads/selenium-java-3.141.59/libs/okhttp-3.11.0.jar"/>
-        <pathelement location="../../../../Downloads/selenium-java-3.141.59/libs/okio-1.14.0.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/client-combined-3.141.59.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/byte-buddy-1.8.15.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/commons-exec-1.3.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/guava-25.0-jre.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/okhttp-3.11.0.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/okio-1.14.0.jar"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.AllTests (1).classpath">
+        <path refid="seleniumPOC.classpath"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/client-combined-3.141.59.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/byte-buddy-1.8.15.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/commons-exec-1.3.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/guava-25.0-jre.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/okhttp-3.11.0.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/okio-1.14.0.jar"/>
         <path refid="JUnit 5.libraryclasspath"/>
     </path>
     <path id="run.facebookLoginPage (3).classpath">
         <path refid="seleniumPOC.classpath"/>
-        <pathelement location="../../../../Downloads/selenium-java-3.141.59/client-combined-3.141.59.jar"/>
-        <pathelement location="../../../../Downloads/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
-        <pathelement location="../../../../Downloads/selenium-java-3.141.59/libs/byte-buddy-1.8.15.jar"/>
-        <pathelement location="../../../../Downloads/selenium-java-3.141.59/libs/commons-exec-1.3.jar"/>
-        <pathelement location="../../../../Downloads/selenium-java-3.141.59/libs/guava-25.0-jre.jar"/>
-        <pathelement location="../../../../Downloads/selenium-java-3.141.59/libs/okhttp-3.11.0.jar"/>
-        <pathelement location="../../../../Downloads/selenium-java-3.141.59/libs/okio-1.14.0.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/client-combined-3.141.59.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/byte-buddy-1.8.15.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/commons-exec-1.3.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/guava-25.0-jre.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/okhttp-3.11.0.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/okio-1.14.0.jar"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.facebookLoginPage.OpenFB (1).classpath">
+        <path refid="seleniumPOC.classpath"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/client-combined-3.141.59.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/byte-buddy-1.8.15.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/commons-exec-1.3.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/guava-25.0-jre.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/okhttp-3.11.0.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/okio-1.14.0.jar"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.facebookLoginPage.OpenGmail (1).classpath">
+        <path refid="seleniumPOC.classpath"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/client-combined-3.141.59.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/byte-buddy-1.8.15.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/commons-exec-1.3.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/guava-25.0-jre.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/okhttp-3.11.0.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/okio-1.14.0.jar"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.seleniumPOC.classpath">
+        <path refid="seleniumPOC.classpath"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/client-combined-3.141.59.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/byte-buddy-1.8.15.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/commons-exec-1.3.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/guava-25.0-jre.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/okhttp-3.11.0.jar"/>
+        <pathelement location="../../../Downloads/selenium-java-3.141.59/libs/okio-1.14.0.jar"/>
         <path refid="JUnit 5.libraryclasspath"/>
     </path>
     <target name="init">
@@ -84,6 +128,15 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
+    <target name="AllTests (1)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.facebook.reachFacebook.AllTests" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.AllTests (1).classpath"/>
+        </junit>
+    </target>
     <target name="facebookLoginPage (3)">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
@@ -91,6 +144,34 @@
             <test name="com.facebook.reachFacebook.facebookLoginPage" todir="${junit.output.dir}"/>
             <jvmarg line="-ea"/>
             <classpath refid="run.facebookLoginPage (3).classpath"/>
+        </junit>
+    </target>
+    <target name="facebookLoginPage.OpenFB (1)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.facebook.reachFacebook.facebookLoginPage" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.facebookLoginPage.OpenFB (1).classpath"/>
+        </junit>
+    </target>
+    <target name="facebookLoginPage.OpenGmail (1)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.facebook.reachFacebook.facebookLoginPage" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.facebookLoginPage.OpenGmail (1).classpath"/>
+        </junit>
+    </target>
+    <target name="seleniumPOC">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.facebook.reachFacebook.AllTests" todir="${junit.output.dir}"/>
+            <test name="com.facebook.reachFacebook.facebookLoginPage" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.seleniumPOC.classpath"/>
         </junit>
     </target>
     <target name="junitreport">
